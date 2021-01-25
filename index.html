@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mr. Nerus</title>
+    <link rel="icon" href="./icons/Logo-CapT.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./universe.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="background-page">
+        <div class="circle parallax" data-speed="0.02"></div>
+        <img src="./images/mountain.svg" alt="" class="mountain parallax" data-speed="-0.03">
+
+    </section>
+
+    <section class="front" id="page1">
+        <header class="top-header" id="navbar">
+            <img src="./icons/Logo-CapT.svg" class="logo">
+            <div class="navigiation">
+                <div class="nav-btn">
+                    <a href="#page1">Home</a>
+                </div>
+                <div class="nav-btn">
+                    <a href="#page2">Info</a>
+                </div>
+                <div class="nav-btn">
+                    <a href="#page3">Tweaks</a>
+                </div>
+                <div class="nav-btn responsive-icon" onclick="openSidenav()">
+                    &#9776;
+
+                </div>
+
+            </div>
+
+        </header>
+        <div class="sidebar-nav" id="sidenav">
+            <div class="close-button" onclick="closeSidenav()">
+                &times;
+            </div>
+            <div class="side-nav-btn">
+                <a href="#page1">Home</a>
+            </div>
+            <div class="side-nav-btn">
+                <a href="#page2">Info</a>
+            </div>
+            <div class="side-nav-btn">
+                <a href="#page3">Tweaks</a>
+            </div>
+
+        </div>
+        <div class="front-body">
+            <div class="intro-left">
+                <div class="uncollapse">
+                    <div class="intro-text">
+                        <div class="sticker">
+                            <h1>Hi There...</h1>
+                        </div>
+                        <div class="sticker">
+                            <h2>This is Tiyel Captee</h2><br>
+                            <p>The Web Desginer</p>
+                        </div>
+                        <div class="sticker">
+                            <div class="button-group">
+                                <a class="button button-focoused" href="https://mail.google.com/mail/?view=cm&fs=1&to=mr.ard.nerus@gmail.com" target="_blank">Email me</a>
+                                <div class="button" onclick="openGallary()">Gallary</div>
+                            </div>
+                            <div class="glass-container" id="gallary">
+
+                                <div class="showcase-info">
+                                    <div class="close-button" onclick="closeGallary()">
+                                        &times;
+                                    </div>
+
+                                    <div class="showcase-card">
+                                        <img src="./icons/LS4.svg" alt="LazySurf4">
+                                        <p>Lazy Surf 4</p>
+                                        <a href="https://mrnerus.github.io/LazySurf4/" target="blank" class="button">Visit</a>
+                                    </div>
+                                    <div class="showcase-card">
+                                        <img src="./icons/nxp.svg" alt="Neruxplore">
+                                        <p>Neruxplore</p>
+                                        <a href="https://mrnerus.github.io/Neruxplore/" target="blank" class="button">Visit</a>
+                                    </div>
+                                    <div class="showcase-card">
+                                        <img src="./icons/Logo-CapT.svg" alt="Tiyel Captee">
+                                        <p>TL Captee</p>
+                                        <a href="" target="blank" class="button">Visit</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pages" id="page2">
+        <div class=" card">
+            <div class="card-rotate">
+                <div class="card-cover ">
+                    <div class="sticker">About Me</div>
+
+                </div>
+                <div class="card-hidden">
+                    <div class="card-text">This is Tiyel Captee.</div>
+                    <div class="button" onclick="openAboutMe()">visit</div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card">
+            <div class="card-rotate">
+                <div class="card-cover ">
+                    <div class="sticker">Skills</div>
+                </div>
+                <div class="card-hidden">
+                    <div class="card-text">desgining and building.</div>
+                    <div class="button" onclick="openMySkill()">visit</div>
+                </div>
+            </div>
+        </div>
+        <div class=" card">
+            <div class="card-rotate">
+                <div class="card-cover ">
+                    <div class="sticker">Contact</div>
+                </div>
+                <div class="card-hidden">
+                    <div class="card-text">Email and Massenger.</div>
+                    <div class="button" onclick="openContactMe()">visit</div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- bouble modal starts here -->
+        <div class="glass-container" id="aboutMe">
+
+            <div class="info">
+                <div class="close-button" onclick="closeAboutMe()">
+                    &times;
+                </div>
+                <p>
+                    Hi.
+                    <br> This is Tiyel Captee.
+                    <br> I am front-end web developer.
+                    <br> I am doing freelancing...
+                    <br> from fiver.
+                </p>
+            </div>
+        </div>
+        <div class="glass-container" id="mySkill">
+
+            <div class="info">
+                <div class="close-button" onclick="closeMySkill()">
+                    &times;
+                </div>
+                <p>
+                    Blender, Photoshop, Figma
+                    <br>...for Desgine.
+                    <br>HTML, CSS, JS
+                    <br>Bootstrap, w3.css, jquery
+                    <br>...for web element.
+                </p>
+            </div>
+        </div>
+        <div class="glass-container" id="contactMe">
+
+            <div class="info" id="infox">
+                <div class="close-button" onclick="closeContactMe()">
+                    &times;
+                </div>
+                <p>
+                    You can (G)Email me.
+                    <br> Or you can also message on
+                    <br>facebook
+                </p>
+                <div class="sticker" id="copyEmail" onclick="copyEmail()">
+                    <input id="myEmail" value="mr.ard.merus@gmail.com" readonly>
+                    <p>click to copy Email</p>
+                </div>
+                <div class="button-group">
+                    <a class="button button-focoused" href="https://mail.google.com/mail/?view=cm&fs=1&to=mr.ard.nerus@gmail.com" target="_blank">Email me</a>
+                    <a class="button" href="https://www.messenger.com/t/MrNerus" target="_blank">Messenger</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="page3" class="pages">
+        <div class="card-pickup">
+
+            <div class="sticker">Dark Mode</div>
+            <label class="switch">
+                <input type="checkbox" onclick="darkModeToggle()" id="darkMode">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </section>
+    <script src="./visual.js"></script>
+    <script src="./function.js"></script>
+</body>
+
+</html>
